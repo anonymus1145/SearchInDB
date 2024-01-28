@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% messages.forEach( message => {%>
+    <h1><%= message.text %></h1>
+    <p>User: <%= message.user %></p>
+    <p>Date: <%= message.added %></p>
+    <% }); %>
+  </body>
+</html>
