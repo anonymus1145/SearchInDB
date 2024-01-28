@@ -20,4 +20,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mini Message Board', messages: messages });
 });
 
+/* GET users imput. */
+router.get("/new", function(req, res, next) {
+  res.render("form", { title: "Add a new message" });
+});
+
+router.post("/new", function(req, res, next) {
+ messages.push({
+   text: req.body.message,
+   user: req.body.user,
+   added: new Date()
+ });
+ res.redirect("/");
+});
 module.exports = router;
