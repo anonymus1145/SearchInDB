@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // Set our api routes with some sample data messages
 const messages = [
@@ -28,7 +28,7 @@ router.get("/new", function(req, res, next) {
 router.post("/new", function(req, res, next) {
  messages.push({
    text: req.body.message,
-   user: req.body.user,
+   user: req.body.name,
    added: new Date()
  });
  res.redirect("/");

@@ -550,7 +550,7 @@ packages:
       statuses: 1.4.0
       type-is: 1.6.18
       utils-merge: 1.0.1
-      vary: 1.1.2
+      consty: 1.1.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1348,7 +1348,7 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
-  /vary@1.1.2:
+  /consty@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
     dev: false
